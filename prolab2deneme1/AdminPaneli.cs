@@ -16,29 +16,22 @@ namespace prolab2deneme1
         {
             InitializeComponent();
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-
-
-        private void button1_Click(object sender, EventArgs e)
+        private void girisYap_Click(object sender, EventArgs e)
         {
             string kullaniciadi, sifre;
-
-            kullaniciadi = textBox1.Text;
-            sifre = textBox2.Text;
-            if (kullaniciadi == "aaa" && sifre == "123")
+            kullaniciadi = KullanıcıAdıText.Text;
+            sifre = SifreText.Text;
+            if(kullaniciadi=="a"&&sifre=="1")
             {
-                MessageBox.Show("Giris basarılı.");
-                AdminPanelislemler adminPanelislemler = new AdminPanelislemler();
-                adminPanelislemler.Show();
+                MessageBox.Show("Giriş Başarılı");
             }
             else
             {
-               MessageBox.Show("Hatali giris lütfen tekrar deneyiniz");
+                MessageBox.Show("Hatali Giriş Lütfen Tekrar Deneyiniz");
             }
+            AdminPaneliİslemler adminpanelislemler = new AdminPaneliİslemler();
+            adminpanelislemler.Show();
         }
     }
 }

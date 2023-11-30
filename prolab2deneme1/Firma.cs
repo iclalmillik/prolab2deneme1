@@ -9,23 +9,28 @@ using static Prolab2_1.deneme.Interfaces;
 
 namespace Prolab2_1.deneme
 {
+  
     public class Firma : User, IProfitable
     {
         public float hizmetBedeli { get; private set; }
+        public string firmaIsim { get; set; }
 
-        Firma Afirmasi = new Firma();
-        Firma Bfirmasi = new Firma();
-        Firma Cfirasi = new Firma();
-        Firma Dfirmasi = new Firma();
-        Firma Ffirmasi = new Firma();
-
-        List<Firma> firmaList = new List<Firma>();
-
-
-        public Firma()
+        public override string ToString()
         {
-            firmaList.Add(new Firma());
-            this.hizmetBedeli = hizmetBedeli;
+            return firmaIsim;
+        }
+        /* Firma Afirmasi = new Firma();
+         Firma Bfirmasi = new Firma();
+         Firma Cfirasi = new Firma();
+         Firma Dfirmasi = new Firma();
+         Firma Ffirmasi = new Firma();
+         List<Firma> firmaList;
+        */
+        public Firma(string firmaIsim)
+        {
+            //firmaList.Add(new Firma());
+            this.firmaIsim = firmaIsim;
+
         }
         public void firmalariGoruntule()
         {
@@ -33,11 +38,11 @@ namespace Prolab2_1.deneme
         }
         public void firmaSil(Firma firma)
         {
-            firmaList.Remove(firma);
+            //firmaList.Remove(firma);
         }
         public void firmaEkle(Firma firma)
         {
-            firmaList.Add(firma);
+            //firmaList.Add(firma);
         }
 
         public override void Login()

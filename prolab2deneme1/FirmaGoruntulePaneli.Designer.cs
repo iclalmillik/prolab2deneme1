@@ -1,6 +1,6 @@
 ﻿namespace prolab2deneme1
 {
-    partial class FirmalariGoruntule
+    partial class FirmaGoruntulePaneli
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.FirmaListesi = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // FirmaListesi
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(259, 59);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(201, 308);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.FirmaListesi.FormattingEnabled = true;
+            this.FirmaListesi.ItemHeight = 16;
+            this.FirmaListesi.Location = new System.Drawing.Point(237, 28);
+            this.FirmaListesi.Name = "FirmaListesi";
+            this.FirmaListesi.Size = new System.Drawing.Size(198, 356);
+            this.FirmaListesi.TabIndex = 0;
+            this.FirmaListesi.SelectedIndexChanged += new System.EventHandler(this.FirmaListesi_SelectedIndexChanged);
             // 
-            // FirmalariGoruntule
+            // FirmaGoruntulePaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBox1);
-            this.Name = "FirmalariGoruntule";
-            this.Text = "FirmalariGoruntule";
-            this.Load += new System.EventHandler(this.FirmalariGoruntule_Load);
+            this.Controls.Add(this.FirmaListesi);
+            this.Name = "FirmaGoruntulePaneli";
+            this.Text = "FirmaGoruntulePaneli";
+            this.Load += new System.EventHandler(this.FirmaGoruntulePaneli_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox FirmaListesi;
     }
 }

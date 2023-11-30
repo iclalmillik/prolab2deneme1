@@ -15,16 +15,31 @@ namespace prolab2deneme1
     {
 
         List<Firma> firmaList = new List<Firma>();
+        public List<string> firmalarListesi;
 
         public AdminPanelislemler()
         {
             InitializeComponent();
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.firmaList=new List<Firma>();
-            firmaList.B
+            FirmalariGoruntule firmalariGoruntule=new FirmalariGoruntule(firmalarListesi);
+            firmalariGoruntule .Show();
+            
+
+           
+
+        }
+
+        
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FirmaKaydıPaneli firmaKaydıPaneli=new FirmaKaydıPaneli();   
+            firmaKaydıPaneli .Show();
+
         }
     }
 }

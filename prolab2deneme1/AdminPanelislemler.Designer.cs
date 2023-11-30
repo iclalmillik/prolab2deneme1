@@ -28,30 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // button4
             // 
-            this.button1.Location = new System.Drawing.Point(284, 96);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(252, 43);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Firmaları Görüntüle";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(284, 162);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(252, 52);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Firma Kaydı Yap";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button4.Location = new System.Drawing.Point(284, 301);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(252, 52);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Hizmet Bedeli Belirle";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -62,14 +52,25 @@
             this.button3.Text = "Firma Kaydı Sil";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button2
             // 
-            this.button4.Location = new System.Drawing.Point(284, 301);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(252, 52);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Hizmet Bedeli Belirle";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(284, 162);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(252, 52);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Firma Kaydı Yap";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(284, 96);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(252, 43);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Firmaları Görüntüle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AdminPanelislemler
             // 
@@ -88,9 +89,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

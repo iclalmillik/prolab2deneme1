@@ -15,6 +15,7 @@ namespace prolab2deneme1
         public Form1()
         {
             InitializeComponent();
+            Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -25,4 +26,5 @@ namespace prolab2deneme1
 
         
     }
+    
 }
